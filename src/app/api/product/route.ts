@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Connect } from "../../../mongodb/connection";
-import Posting from "@/model/post";
+import Posting from "../../../Model/post";
 import { v2 as cloudinary } from "cloudinary";
 
 cloudinary.config({
