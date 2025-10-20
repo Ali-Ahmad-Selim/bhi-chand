@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Connect } from "@/database/connection";
+import { Connect } from "../../../mongodb/connection";
 import Posting from "@/model/post";
 import { v2 as cloudinary } from "cloudinary";
 
