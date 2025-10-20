@@ -13,8 +13,7 @@ const navigationItems = [
   { label: "Home", path: "/home", value: "Home", emoji: "🏡" },
   { label: "Undergarments", path: "/undergarments", value: "Undergarments", emoji: "🩲" },
   { label: "Night Suit", path: "/night-suit", value: "Night Suit", emoji: "🛌" },
-  { label: "Men Purse", path: "/men-purse", value: "Men Purse", emoji: "👜" },
-  { label: "Women Purse", path: "/women-purse", value: "Women Purse", emoji: "👝" },
+ 
 ];
 
 export default function UrbanestNavbar({ name, setName }: UrbanestNavbarProps) {
@@ -41,7 +40,7 @@ export default function UrbanestNavbar({ name, setName }: UrbanestNavbarProps) {
             {/* Brand Logo */}
             <div className="flex-shrink-0" onClick={renderHome}>
               <h1 className="text-xl sm:text-2xl lg:text-3xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent cursor-pointer hover:scale-105 transition-all duration-300 font-inter tracking-tight">
-                Urbanest
+                MegaOnlineMall
               </h1>
             </div>
 
@@ -75,7 +74,7 @@ export default function UrbanestNavbar({ name, setName }: UrbanestNavbarProps) {
             {/* Desktop Right-Side: Cart + Login (no dropdowns) */}
             <div className="hidden sm:flex items-center space-x-2 lg:space-x-4">
               {/* Shopping Cart (unchanged) */}
-              <button className="relative p-2.5 lg:p-3 text-gray-300 bg-gray-800/60 border border-gray-600/50 rounded-xl hover:text-white hover:bg-blue-600/20 hover:border-blue-500/50 hover:transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 active:transform active:translate-y-0 group">
+              {/* <button className="relative p-2.5 lg:p-3 text-gray-300 bg-gray-800/60 border border-gray-600/50 rounded-xl hover:text-white hover:bg-blue-600/20 hover:border-blue-500/50 hover:transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 active:transform active:translate-y-0 group">
                 <svg
                   className="w-5 h-5 lg:w-6 lg:h-6 group-hover:scale-110 transition-transform duration-200"
                   fill="none"
@@ -87,7 +86,7 @@ export default function UrbanestNavbar({ name, setName }: UrbanestNavbarProps) {
                 <span className="absolute -top-1 -right-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-black rounded-full h-5 w-5 flex items-center justify-center border-2 border-gray-900 animate-pulse shadow-lg">
                   3
                 </span>
-              </button>
+              </button> */}
 
               {/* Login (replaces Profile/Logout) */}
               <button
@@ -104,14 +103,14 @@ export default function UrbanestNavbar({ name, setName }: UrbanestNavbarProps) {
             {/* Mobile Top Right: Cart + Login (no hamburger) */}
             <div className="sm:hidden flex items-center space-x-2">
               {/* Mobile Cart (kept exactly as before) */}
-              <button className="relative p-2.5 text-gray-300 bg-gray-800/60 border border-gray-600/50 rounded-xl hover:text-white hover:bg-blue-600/20 hover:border-blue-500/50 transition-all duration-300 group">
+              {/* <button className="relative p-2.5 text-gray-300 bg-gray-800/60 border border-gray-600/50 rounded-xl hover:text-white hover:bg-blue-600/20 hover:border-blue-500/50 transition-all duration-300 group">
                 <svg className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.1 5M7 13v6a2 2 0 002 2h6a2 2 0 002-2v-6" />
                 </svg>
                 <span className="absolute -top-1 -right-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-black rounded-full h-4 w-4 flex items-center justify-center border-2 border-gray-900 animate-pulse shadow-lg">
                   3
                 </span>
-              </button>
+              </button> */}
 
               {/* Mobile Login */}
               <button
